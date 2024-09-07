@@ -1,0 +1,100 @@
+nav{
+    justify-content: space-between;
+    background-color: var(--background);
+    color: var(--secondary);
+}
+nav span{
+    display: block;
+}
+nav .user{
+    border: 2px solid #000;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+nav button{
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    color: #000;
+    /* background-color: var(--primary); */
+}
+.dark{
+    transition: 0,4s;
+}
+.dark.dark_mode2{
+    margin-top: -40px;
+}
+
+aside{
+    height: calc(100vh - 63.2px);
+    background-color: rgba(0, 0, 0, 0.3);
+    transform: translateX(-100%);
+    transition: 0.5s;
+}
+aside.active{
+    transform: translateX(0);
+}
+aside .menu{
+    width: 50%;
+    max-width: 350px;
+    height: 100%;
+    background-color: var(--background);
+    position: relative;
+}
+aside .menu .nav_menu a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 0;
+    color: var(--secondary);
+}
+/* aside .menu .nav_menu a:hover{
+    color: var(--primary);
+} */
+aside .menu .nav_menu ul,li{
+    list-style-type: none;
+}
+aside .menu .nav_menu{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+    text-transform: uppercase;
+}
+aside .close{
+    position: absolute;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    border: 2px solid #000;
+    text-align: center;
+    border-radius: 50%;
+    top: 70px;
+    right: 28px;
+    cursor: pointer;
+    color: var(--secondary);
+}
+
+:root{
+    ---syne: "PT Serif", serif;
+    --primary: #fff;
+    --secondary: #1B1B1B;
+    --background: lightgray;
+}
+.dark-mode{
+    --primary: #000;
+    --secondary: #fff;
+    --background: #1B1B1B;
+    transition: 0.3s;
+} 
+.full-body{
+    height: 100vh;
+    background-color: var(--primary);
+}
+
